@@ -121,8 +121,8 @@ int main(void)
     //int flag = 1; // should come from ESP8266
 		char choice = '\0'; // should come from ESP8266
 	
-    //Thursday, May 7, 2020 9:00:00 21:00:00
-    //day(5) cen(21) month(5)  date(7)   year(20) hour(21) min(0) sec(0)
+    //Tuesday, May 26, 2020 9:00:00
+    //day(3) cen(21) month(5)  date(26)   year(20) hour(9) min(0) sec(0)
     
     //sun mon tues wed thurs fri sat
     //1    2   3   4    5   6     7
@@ -141,19 +141,19 @@ int main(void)
 
 	// hours
 	hourbuffer[0] = 0x02; //register address
-	hourbuffer[1] = 0x21; //data to put in register 00100001 --> 9 pm --> 21
+	hourbuffer[1] = 0x09; //data to put in register 00001001 --> 9 am
     
 	HAL_I2C_Master_Transmit(&hi2c1, 0xD0, hourbuffer, 2, 10);
     
     // day
     daybuffer[0] = 0x03; //register address
-    daybuffer[1] = 0x05; //data to put in register 00000101 --> 5 day
+    daybuffer[1] = 0x03; //data to put in register 00000011 --> 3 day
     
     HAL_I2C_Master_Transmit(&hi2c1, 0xD0, daybuffer, 2, 10);
     
     // date
     datebuffer[0] = 0x04; //register address
-    datebuffer[1] = 0x07; //data to put in register 00000111 --> 7
+    datebuffer[1] = 0x26; //data to put in register 00100110 --> 26
     
     HAL_I2C_Master_Transmit(&hi2c1, 0xD0, datebuffer, 2, 10);
     
@@ -170,7 +170,7 @@ int main(void)
     HAL_I2C_Master_Transmit(&hi2c1, 0xD0, yearbuffer, 2, 10);
 	
 	
-	//Receive via I2C and forward to UART  Thursday, 7 May, 2020  21:00:00
+	//Receive via I2C and forward to UART  Tuesday, 26 May, 2020  09:00:00
     uint8_t out[] = {0,0,',',0,0,' ',0,0,',',0,0,' ',0,0,':',0,0,':',0,0,'\r','\n'};
 	
 	
