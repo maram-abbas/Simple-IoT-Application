@@ -15,8 +15,17 @@ Technology Used
       - will be programed to act as a WiFi Access Point and run a simple HTTP server
       - communicates with the STM32 module using Asynchronous Serial link (using UART)
       - Datasheet: https://www.openimpulse.com/blog/wp-content/uploads/wpsc/downloadables/0A-ESP8266__Datasheet__EN_v4.3.pdf
+  
   - RTC Module:
     - DS3231
     - Estimated cost: EGP 50
     - Main Function: works as a clock and sends the STM32 the date/time when requested
     - Datasheet: https://datasheetspdf.com/pdf-file/1081920/MaximIntegrated/DS3231/1
+    
+System Architecture
+  This project follows the client-server architecture. The ESP8266 module is known to run the HTTP server and the web page that the user will be using will act as the client. Client requests may be as follows:
+  o Turn on LED on STM32 module 
+  o Turn off LED on STM32 module 
+  o Send real date to STM32 module 
+  o Send real time to STM32 module
+  
