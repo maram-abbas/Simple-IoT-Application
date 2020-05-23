@@ -24,8 +24,8 @@ Technology Used
     
 System Architecture
   This project follows the client-server architecture. The ESP8266 module is known to run the HTTP server and the web page that the user will be using will act as the client. Client requests may be as follows:
-  o Turn on LED on STM32 module 
-  o Turn off LED on STM32 module 
-  o Send real date to STM32 module 
-  o Send real time to STM32 module
+  - Turn on LED on STM32 module 
+  - Turn off LED on STM32 module 
+  - Send real date from RTC module to STM32 module and then to ESP8266 module
+  - Send real time from RTC module to STM32 module and then to ESP8266 module
   
