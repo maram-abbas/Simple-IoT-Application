@@ -23,9 +23,9 @@ This simple IoT application is used to aid the user in controlling the I/O opera
    - Datasheet: https://datasheetspdf.com/pdf-file/1081920/MaximIntegrated/DS3231/1
     
 ## System Architecture
-  - This project follows the client-server architecture. The ESP8266 module is known to run the HTTP server and the web page that the user will be using will act as the client. Client requests may be as follows:
-    - Turn on LED on STM32 module 
-    - Turn off LED on STM32 module 
-    - Send real date from RTC module to STM32 module and then to ESP8266 module
-    - Send real time from RTC module to STM32 module and then to ESP8266 module
+This project follows the client-server architecture. The ESP8266 module is known to run the HTTP server and the web page that the user will be using will act as the client. Client requests may be as follows:
+   - Turn on LED on STM32 module 
+   - Turn off LED on STM32 module 
+   - Send real date from RTC module to STM32 module and then to ESP8266 module
+   - Send real time from RTC module to STM32 module and then to ESP8266 module
   
