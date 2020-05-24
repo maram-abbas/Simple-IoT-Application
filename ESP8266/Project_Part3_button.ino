@@ -29,6 +29,7 @@ String get_date_time()
   String date_time = "";
   
   Serial.print('1');
+  delay(3000);
   while(Serial.available() > 0)    //Checks is there any data in buffer 
   {
     date_time += char(Serial.read());  //Read serial data byte
