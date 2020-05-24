@@ -20,7 +20,7 @@ This simple IoT application is used to aid the user in controlling the I/O opera
 ### RTC Module:
    - DS3231
    - Estimated cost: EGP 50
-   - Main Function: works as a clock and sends the STM32 the date/time when requested
+   - Main function: works as a clock and sends the STM32 the date/time when requested
    - Datasheet: https://datasheetspdf.com/pdf-file/1081920/MaximIntegrated/DS3231/1
     
 ## System Architecture
