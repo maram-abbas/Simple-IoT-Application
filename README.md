@@ -1,7 +1,7 @@
 # Simple-IoT-Application
 This simple IoT application is used to aid the user in controlling the I/O operations of the STM32 module. This is done by the help of the ESP8266 module which will run a simple HTTP server as well as a WiFi access point. The real date and time will also be retrieved through it. STM32 then requests the date and time from the RTC module.
 
-Technology Used
+# Technology Used
   - STM32 Module:
     - STM32L432KC
     - Estimated cost: EGP 125
@@ -22,7 +22,7 @@ Technology Used
     - Main Function: works as a clock and sends the STM32 the date/time when requested
     - Datasheet: https://datasheetspdf.com/pdf-file/1081920/MaximIntegrated/DS3231/1
     
-System Architecture
+# System Architecture
   - This project follows the client-server architecture. The ESP8266 module is known to run the HTTP server and the web page that the user will be using will act as the client. Client requests may be as follows:
     - Turn on LED on STM32 module 
     - Turn off LED on STM32 module 
