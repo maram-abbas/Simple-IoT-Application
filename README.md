@@ -11,7 +11,8 @@ This simple IoT application is used to aid the user in controlling the I/O opera
   
 ### ESP8266 Module:
    - Estimated cost: EGP 135
-   - Programmed using Arduino IDE o Main function:
+   - Programmed using Arduino IDE 
+   - Main function:
      - will be programed to act as a WiFi Access Point and run a simple HTTP server
      - communicates with the STM32 module using Asynchronous Serial link (using UART)
      - Datasheet: https://www.openimpulse.com/blog/wp-content/uploads/wpsc/downloadables/0A-ESP8266__Datasheet__EN_v4.3.pdf
